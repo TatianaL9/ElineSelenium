@@ -28,7 +28,7 @@ public class HomePageTest extends BaseClass {
     @Test
     public void categoryCount() throws InterruptedException {
 
-        Thread.sleep(4000);
+        driver.get("https://elinebox.com/");
         List Elements = driver.findElements(By.cssSelector("div[class='swiper-slide free-mode-slide elb-home-category-swiper']"));
 
         // System.out.println(threeElements.size());

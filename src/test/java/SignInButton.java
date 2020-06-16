@@ -56,7 +56,7 @@ public class SignInButton extends BaseClass {
         driver.findElement(By.cssSelector("#Password")).sendKeys("123321Zx#c");
         driver.findElement(By.cssSelector("button[type='submit']")).click();
         Thread.sleep(3000);
-        String actualText = driver.findElement(By.cssSelector("div[class='elp-validation-summary validation-summary-errors'")).getText();
+        String actualText = driver.findElement(By.cssSelector("div[class='elp-validation-summary validation-summary-errors']")).getText();
         Assert.assertEquals(actualText, "The password and confirmation password do not match.");
     }
 

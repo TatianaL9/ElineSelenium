@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/l_ser/IdeaProjects/ElineSelenium/src/test/java">
+        <classes>
+            <class name="SignInButton"/>
+            <class name="shopBy"/>
+            <class name="HomePageTest"/>
+           <class name="ServiceProviderSignUp"/>
+           <class name="WebElementsEsampleTest"/>
+        </classes>
+
+    </test>
+</suite>

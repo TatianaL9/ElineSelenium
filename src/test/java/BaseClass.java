@@ -6,6 +6,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 import java.sql.Driver;
+import java.util.concurrent.TimeUnit;
 
 
 public class BaseClass {
@@ -16,7 +17,7 @@ public class BaseClass {
     void beforeClass() throws InterruptedException {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        Thread.sleep(2000);
+       driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 
     }
 
