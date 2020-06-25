@@ -8,6 +8,7 @@
             <class name="HomePageTest"/>
            <class name="ServiceProviderSignUp"/>
            <class name="WebElementsEsampleTest"/>
+            <class name="AdvancedTest"/>
         </classes>
 
     </test>

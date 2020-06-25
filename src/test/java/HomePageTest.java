@@ -1,5 +1,6 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.util.List;
@@ -9,8 +10,9 @@ public class HomePageTest extends BaseClass {
     @Test
     public void titleTest() throws InterruptedException {
         driver.get("https://elinebox.com/");
-        Thread.sleep(3000);
+        wait.until(ExpectedConditions.titleIs("Home - eLineBox"));
         String Title = driver.getTitle();
+
         Assert.assertEquals(Title, "Home - eLineBox");
     }
 
