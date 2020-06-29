@@ -9,6 +9,7 @@
            <class name="ServiceProviderSignUp"/>
            <class name="WebElementsEsampleTest"/>
             <class name="AdvancedTest"/>
+            <class name="clearCookies"/>
         </classes>
 
     </test>
